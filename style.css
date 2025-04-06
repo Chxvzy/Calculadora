@@ -11,9 +11,11 @@
     font-size: 62,5%;
 
     --jegged-ice: #C5E4E7;
+    --beetle-green: #547878;
     --sherpa-blue: #00484b;
     --squeeze: #f3f9fA;
     --greyish-turquoise: #5E7A7D;
+    --topaz: #26C2AE;
     --white: #FFFF;
 }
 
@@ -70,15 +72,45 @@ main {
                 opacity: 0.35;
         }
     }   
+
+    .input-box:has(input:focus){
+        outline: 2px solid var(--topaz);
+    }
+
     .tip > div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.6rem;
-        
+        margin-top: 1rem;
+
+        button {
+            border: none;
+            background: var(--sherpa-blue);
+            color: var(--white);
+            font-size: 2.4rem;
+            border-radius: .5rem;
+            padding-block: .6rem;
+            font-weight: 700;
+        }
+
         input{
             width: 100%;
+            background: var(--squeeze);
+            font-size: 2.4rem;
+            text-align: center;
+            border: none;
+            border-radius: ,5rem;
+            outline: none;
+            font-weight: 700;
+            color: var(--sherpa-blue);
+            
+            &::placeholder{
+                color: var(--beetle-green);
+            }
 
+            &:focus {
+                outline: 2px solid var(--topaz);
+            }
         }
-    }
-    
+    }  
 }
