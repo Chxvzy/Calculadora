@@ -9,7 +9,7 @@
 
 :root {
     font-size: 62,5%;
-
+    --regent-grey: #7F9D9F;
     --jegged-ice: #C5E4E7;
     --beetle-green: #547878;
     --sherpa-blue: #00484b;
@@ -113,4 +113,43 @@ main {
             }
         }
     }  
+}
+
+.results{
+    background: var(--sherpa-blue);
+    border-radius: 1.5rem;
+    padding: 4rem 2.4rem 2.4rem;
+
+    .amount.
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.4rem;
+
+        p {
+            color: var(--white);
+            font-weight: 700;
+
+            span {
+                color: var(--regent-grey);
+                font-size: 1.3rem;
+            }
+        }
+        strong {
+            color: var(--topaz);
+            font-size: 3.2rem;
+        }
+    }
+    button {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: var(--topaz);
+        color: var(--sherpa-blue);
+        border: none;
+        padding-block: .9rem;
+        border-radius: .5rem;
+    }
 }
